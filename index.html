@@ -156,6 +156,9 @@ nav{position:sticky;top:0;z-index:80;background:rgba(7,11,22,.85);backdrop-filte
 .did{display:grid;gap:11px;margin-bottom:28px}
 .did div{display:flex;gap:11px;align-items:flex-start;font-size:14px}
 .did div::before{content:"→";color:var(--sky);font-weight:700;flex-shrink:0}
+.case-wrap.alt{grid-template-columns:.95fr 1.05fr}
+.case-wrap.alt .case-visual{background:linear-gradient(155deg,#3a1019,#641b2e 45%,#1c070c)}
+.shop.crimson .shop-top,.shop.crimson .prod i,.shop.crimson .shop-cta{background:#d1244a}
 
 /* PROCESS */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
@@ -207,6 +210,7 @@ footer{border-top:1px solid var(--line);background:var(--bg-2);padding:56px 0 34
 /* RESPONSIVE */
 @media(max-width:960px){
   .hero-grid,.case-wrap,.pay-wrap{grid-template-columns:1fr}
+  .case-wrap.alt .case-visual{order:-1}
   .build-grid{grid-template-columns:1fr 1fr}
   .steps{grid-template-columns:1fr 1fr;gap:26px}
   .nav-links{display:none}
@@ -247,7 +251,7 @@ footer{border-top:1px solid var(--line);background:var(--bg-2);padding:56px 0 34
         <a class="btn ghost" href="#work">See real work →</a>
       </div>
       <div class="trust-row">
-        <div class="trust"><b>Live</b><span>projects running</span></div>
+        <div class="trust"><b>2 live</b><span>platforms running</span></div>
         <div class="trust"><b>Mobile money</b><span>payments built in</span></div>
         <div class="trust"><b>Tanzania</b><span>wide coverage</span></div>
       </div>
@@ -321,8 +325,8 @@ footer{border-top:1px solid var(--line);background:var(--bg-2);padding:56px 0 34
 <section class="case" id="work">
   <div class="wrap">
     <span class="eyebrow">Our work</span>
-    <h2>From a shop counter<br>to <span class="grad">online orders.</span></h2>
-    <p class="lede">A real Dar es Salaam retail business, now selling online. This is what going digital actually looks like.</p>
+    <h2>Real platforms.<br><span class="grad">Live and running.</span></h2>
+    <p class="lede">Not mockups or templates — these are working systems used by real people in Dar es Salaam every day.</p>
 
     <div class="case-wrap rv">
       <div class="case-visual">
@@ -351,6 +355,36 @@ footer{border-top:1px solid var(--line);background:var(--bg-2);padding:56px 0 34
           <div>Delivery across Dar es Salaam</div>
         </div>
         <a class="btn" href="https://shahisundries.com" target="_blank" rel="noopener">Visit the live site →</a>
+      </div>
+    </div>
+
+    <div class="case-wrap alt rv">
+      <div class="case-info">
+        <span class="live"><span class="pulse"></span>Live at darbloodconnect.co.tz</span>
+        <h3>Dar Blood Connect</h3>
+        <p>A voluntary blood donor register for Dar es Salaam, connecting willing donors with the facilities that need them. A community project, built and run by WEBORA.</p>
+        <div class="did">
+          <div>Donor registration with phone verification and blood-group confirmation</div>
+          <div>Permission-controlled search — approved facilities only</div>
+          <div>Request review, notifications and automatic pausing during recovery periods</div>
+          <div>Privacy by design — no donor names or numbers are ever public</div>
+        </div>
+        <a class="btn" href="https://darbloodconnect.co.tz" target="_blank" rel="noopener">Visit the live site →</a>
+      </div>
+      <div class="case-visual">
+        <div class="shop crimson">
+          <div class="shop-top"><b>DAR BLOOD CONNECT</b><span>Dar es Salaam</span></div>
+          <div class="shop-body">
+            <h4>Donate blood. Save lives.</h4>
+            <p>A voluntary donor register for Dar es Salaam.</p>
+            <div class="prods">
+              <div class="prod"><i></i>Register</div>
+              <div class="prod"><i></i>Verify</div>
+              <div class="prod"><i></i>Donate</div>
+            </div>
+            <div class="shop-cta">Join the register</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
