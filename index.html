@@ -3,296 +3,220 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WEBORA — We Build Websites That Grow Businesses | Tanzania</title>
-<meta name="description" content="WEBORA is Tanzania's digital growth partner for small businesses. Professional websites, e-commerce, online ordering, mobile money payments, and AI solutions. Dar es Salaam, Arusha, Mwanza, Zanzibar and beyond.">
-<meta name="theme-color" content="#0B1020">
+<title>WEBORA — We Build Your Business Online | Tanzania</title>
+<meta name="description" content="WEBORA builds websites, online stores, booking systems, tracking platforms and custom business software for Tanzanian businesses. Dar es Salaam, Arusha, Mwanza, Zanzibar and beyond.">
+<meta name="theme-color" content="#070B16">
+<meta property="og:title" content="WEBORA — We Build Your Business Online">
+<meta property="og:description" content="Websites, online stores, booking systems and custom platforms for Tanzanian businesses.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webora.co.tz">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#0B1020;
-  --panel:#111832;
-  --panel-2:#0E1428;
-  --blue:#0D6EFD;
-  --sky:#36B3FF;
-  --ice:#F2F4F8;
-  --muted:#8A94B0;
-  --line:rgba(54,179,255,.14);
-  --radius:14px;
+  --bg:#070B16;
+  --bg-2:#0B1122;
+  --panel:#101833;
+  --line:rgba(120,160,255,.13);
+  --line-2:rgba(120,160,255,.28);
+  --ink:#EEF2FB;
+  --muted:#8A97B8;
+  --blue:#2C6BFF;
+  --sky:#4FC3FF;
+  --amber:#FFB347;
+  --green:#3DDC84;
+  --r:16px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{
-  background:var(--navy);
-  color:var(--ice);
-  font-family:'Montserrat',system-ui,sans-serif;
-  font-size:16px;
-  line-height:1.6;
-  overflow-x:hidden;
+  background:var(--bg);color:var(--ink);
+  font-family:'Inter',system-ui,sans-serif;
+  font-size:16px;line-height:1.65;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
 }
-.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3,h4{font-family:'Sora',sans-serif;font-weight:800;line-height:1.1;letter-spacing:-.025em}
 a{color:inherit;text-decoration:none}
-img{max-width:100%}
-.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
-section{padding:84px 0}
+.mono{font-family:'JetBrains Mono',monospace}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:clamp(64px,9vw,110px) 0;position:relative}
+.grad{background:linear-gradient(100deg,var(--sky),var(--blue) 70%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .eyebrow{
-  font-family:'JetBrains Mono',monospace;
-  font-size:12px;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--sky);margin-bottom:14px;display:block;
+  font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--sky);display:block;margin-bottom:18px;
 }
-h1,h2,h3{font-weight:800;line-height:1.15;letter-spacing:-.01em}
-h2{font-size:clamp(28px,4vw,40px);margin-bottom:14px}
-.sub{color:var(--muted);max-width:640px;font-size:16.5px}
-.grad{background:linear-gradient(92deg,var(--blue),var(--sky));-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:clamp(30px,4.6vw,50px);margin-bottom:16px}
+.lede{color:var(--muted);font-size:clamp(15.5px,1.6vw,18px);max-width:620px}
 
-/* ---------- NAV ---------- */
-nav{
-  position:sticky;top:0;z-index:50;
-  background:rgba(11,16,32,.82);backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--line);
-}
-.nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
-.logo{font-weight:900;font-size:22px;letter-spacing:.02em}
+/* NAV */
+nav{position:sticky;top:0;z-index:80;background:rgba(7,11,22,.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font-family:'Sora',sans-serif;font-weight:800;font-size:23px;letter-spacing:.01em}
 .logo span{color:var(--sky)}
-.nav-links{display:flex;gap:26px;font-size:14px;font-weight:600}
+.nav-links{display:flex;gap:30px;font-size:14.5px;font-weight:500}
 .nav-links a{color:var(--muted);transition:color .2s}
-.nav-links a:hover{color:var(--ice)}
+.nav-links a:hover{color:var(--ink)}
 .btn{
-  display:inline-flex;align-items:center;gap:9px;
-  background:linear-gradient(92deg,var(--blue),#2a8ef5);
-  color:#fff;font-weight:700;font-size:14.5px;
-  padding:13px 24px;border-radius:10px;border:0;cursor:pointer;
-  transition:transform .18s, box-shadow .18s;
-  box-shadow:0 6px 22px rgba(13,110,253,.28);
+  display:inline-flex;align-items:center;gap:10px;justify-content:center;
+  background:linear-gradient(100deg,var(--blue),#4a87ff);color:#fff;
+  font-family:'Sora',sans-serif;font-weight:700;font-size:15px;
+  padding:15px 28px;border-radius:12px;border:0;cursor:pointer;
+  transition:transform .18s cubic-bezier(.2,.8,.3,1),box-shadow .18s;
+  box-shadow:0 8px 30px rgba(44,107,255,.32);
 }
-.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(13,110,253,.4)}
-.btn.ghost{background:transparent;border:1px solid rgba(138,148,176,.4);box-shadow:none;color:var(--ice)}
-.btn.ghost:hover{border-color:var(--sky);box-shadow:none}
-.btn.sm{padding:10px 18px;font-size:13.5px}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(44,107,255,.45)}
+.btn.sm{padding:11px 20px;font-size:14px;border-radius:10px}
+.btn.ghost{background:transparent;border:1px solid var(--line-2);box-shadow:none;color:var(--ink)}
+.btn.ghost:hover{border-color:var(--sky);background:rgba(79,195,255,.06)}
 
-/* ---------- HERO ---------- */
-.hero{padding:92px 0 70px;position:relative}
+/* HERO */
+.hero{padding:clamp(56px,8vw,96px) 0 clamp(56px,7vw,84px);overflow:hidden}
 .hero::before{
-  content:"";position:absolute;inset:0;pointer-events:none;
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
   background:
-    radial-gradient(600px 340px at 80% 8%,rgba(13,110,253,.16),transparent 65%),
-    radial-gradient(500px 300px at 8% 90%,rgba(54,179,255,.08),transparent 60%);
+    radial-gradient(760px 420px at 78% 4%,rgba(44,107,255,.20),transparent 62%),
+    radial-gradient(560px 340px at 4% 88%,rgba(79,195,255,.10),transparent 60%);
 }
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative}
-.hero h1{font-size:clamp(36px,5.2vw,58px);font-weight:900;margin-bottom:20px}
-.hero p.lead{color:var(--muted);font-size:17.5px;max-width:480px;margin-bottom:30px}
-.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
-.chips{display:flex;gap:10px;flex-wrap:wrap}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(32px,5vw,64px);align-items:center}
+.hero h1{font-size:clamp(38px,6vw,68px);margin-bottom:22px}
+.hero .sub{color:var(--muted);font-size:clamp(16px,1.7vw,18.5px);max-width:500px;margin-bottom:32px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:38px}
+.trust-row{display:flex;gap:26px;flex-wrap:wrap;align-items:center;padding-top:26px;border-top:1px solid var(--line)}
+.trust{display:flex;flex-direction:column;gap:2px}
+.trust b{font-family:'Sora',sans-serif;font-size:19px}
+.trust span{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.13em;color:var(--muted);text-transform:uppercase}
+
+/* device mock */
+.mock{position:relative;perspective:1400px}
+.screen{
+  background:var(--panel);border:1px solid var(--line-2);border-radius:18px;overflow:hidden;
+  box-shadow:0 40px 90px rgba(0,0,0,.55);transform:rotateY(-6deg) rotateX(2deg);
+}
+.screen-bar{display:flex;align-items:center;gap:7px;background:rgba(7,11,22,.75);padding:12px 15px;border-bottom:1px solid var(--line)}
+.dot{width:9px;height:9px;border-radius:50%;background:#2b3557}
+.addr{
+  flex:1;margin-left:8px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);
+  background:rgba(0,0,0,.35);border-radius:7px;padding:5px 12px;
+}
+.addr b{color:var(--sky);font-weight:500}
+.screen-body{padding:26px 24px 28px;background:linear-gradient(165deg,#16204a,#0a1024)}
+.live{display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.18em;color:var(--green);text-transform:uppercase;margin-bottom:14px}
+.pulse{width:7px;height:7px;border-radius:50%;background:var(--green);animation:p 1.9s infinite}
+@keyframes p{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(61,220,132,.5)}50%{opacity:.5;box-shadow:0 0 0 6px rgba(61,220,132,0)}}
+.screen-body h3{font-size:23px;margin-bottom:8px}
+.screen-body p{font-size:13.5px;color:var(--muted);margin-bottom:20px}
+.mini-row{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.mini{background:rgba(0,0,0,.28);border:1px solid var(--line);border-radius:11px;padding:13px 9px;text-align:center}
+.mini b{display:block;font-family:'Sora',sans-serif;font-size:14.5px;color:var(--sky)}
+.mini span{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--muted);letter-spacing:.06em}
+
+/* MARQUEE STRIP */
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-2);padding:20px 0;overflow:hidden}
+.strip-in{display:flex;gap:44px;align-items:center;white-space:nowrap;animation:slide 34s linear infinite}
+.strip-in span{font-family:'JetBrains Mono',monospace;font-size:12.5px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+.strip-in i{color:var(--blue);font-style:normal}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* WHAT WE BUILD */
+.build-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.bcard{
+  background:linear-gradient(180deg,var(--panel),rgba(16,24,51,.5));
+  border:1px solid var(--line);border-radius:var(--r);padding:30px 26px;
+  transition:transform .25s cubic-bezier(.2,.8,.3,1),border-color .25s;position:relative;overflow:hidden;
+}
+.bcard::after{content:"";position:absolute;inset:0;background:radial-gradient(320px 160px at 50% -10%,rgba(79,195,255,.12),transparent 70%);opacity:0;transition:opacity .3s}
+.bcard:hover{transform:translateY(-5px);border-color:var(--line-2)}
+.bcard:hover::after{opacity:1}
+.bnum{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--blue);letter-spacing:.16em;margin-bottom:14px;display:block}
+.bcard h3{font-size:18.5px;margin-bottom:9px}
+.bcard p{font-size:14px;color:var(--muted)}
+
+/* CASE STUDY */
+.case{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.case-wrap{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:0;margin-top:42px;
+  border:1px solid var(--line-2);border-radius:22px;overflow:hidden;background:var(--panel);
+}
+.case-visual{background:linear-gradient(155deg,#3a2410,#5a3316 45%,#1c1308);padding:clamp(28px,4vw,48px);display:grid;place-items:center;min-height:340px}
+.shop{background:#fffdf9;color:#1c1917;border-radius:14px;width:100%;max-width:380px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.shop-top{background:#f06106;color:#fff;padding:14px 18px;display:flex;justify-content:space-between;align-items:center}
+.shop-top b{font-family:'Sora',sans-serif;font-size:14.5px;letter-spacing:.02em}
+.shop-top span{font-size:11px;opacity:.9}
+.shop-body{padding:18px}
+.shop-body h4{font-family:'Sora',sans-serif;font-size:16px;margin-bottom:5px}
+.shop-body>p{font-size:12px;color:#78716c;margin-bottom:14px}
+.prods{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:14px}
+.prod{background:#faf7f1;border:1px solid #ece4d7;border-radius:10px;padding:14px 6px;text-align:center;font-size:10px;color:#57534e}
+.prod i{display:block;width:26px;height:26px;border-radius:50%;background:#f06106;opacity:.85;margin:0 auto 7px}
+.shop-cta{background:#f06106;color:#fff;text-align:center;padding:10px;border-radius:9px;font-size:12.5px;font-weight:600}
+.case-info{padding:clamp(28px,3.6vw,46px);display:flex;flex-direction:column;justify-content:center}
+.case-info h3{font-size:clamp(22px,2.7vw,30px);margin:12px 0 14px}
+.case-info>p{color:var(--muted);font-size:15px;margin-bottom:24px}
+.did{display:grid;gap:11px;margin-bottom:28px}
+.did div{display:flex;gap:11px;align-items:flex-start;font-size:14px}
+.did div::before{content:"→";color:var(--sky);font-weight:700;flex-shrink:0}
+
+/* PROCESS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
+.step{position:relative;padding-top:26px;border-top:2px solid var(--line-2)}
+.step .n{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--blue);letter-spacing:.16em;display:block;margin-bottom:10px}
+.step h4{font-size:17.5px;margin-bottom:7px}
+.step p{font-size:13.5px;color:var(--muted)}
+
+/* PAYMENTS + REACH */
+.pay-wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,60px);align-items:start}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
 .chip{
-  font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.04em;
-  color:var(--sky);border:1px solid var(--line);
-  padding:7px 13px;border-radius:999px;background:rgba(54,179,255,.05);
+  font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.05em;
+  border:1px solid var(--line-2);border-radius:999px;padding:9px 17px;
+  background:rgba(44,107,255,.06);color:var(--ink);
 }
+.chip.a{color:var(--amber);border-color:rgba(255,179,71,.3);background:rgba(255,179,71,.05)}
 
-/* browser mock */
-.browser{
-  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-  overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5);
-  transform:rotate(1.2deg);
+/* CTA */
+.cta{
+  background:
+    radial-gradient(700px 300px at 50% 0%,rgba(44,107,255,.22),transparent 65%),
+    linear-gradient(180deg,var(--panel),var(--bg-2));
+  border:1px solid var(--line-2);border-radius:26px;padding:clamp(40px,6vw,70px) clamp(24px,4vw,50px);text-align:center;
 }
-.browser-bar{
-  display:flex;align-items:center;gap:8px;
-  background:var(--panel-2);padding:11px 14px;border-bottom:1px solid var(--line);
-}
-.dot{width:10px;height:10px;border-radius:50%;background:#2a3350}
-.urlbar{
-  flex:1;font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--muted);
-  background:rgba(11,16,32,.7);border-radius:6px;padding:5px 12px;margin-left:8px;
-}
-.urlbar b{color:var(--sky);font-weight:500}
-.browser-body{padding:28px 26px 30px;background:linear-gradient(160deg,#131b38, #0d1329)}
-.bb-tag{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.18em;color:#f0a35e;text-transform:uppercase}
-.browser-body h3{font-size:23px;margin:10px 0 8px}
-.browser-body p{font-size:13.5px;color:var(--muted);margin-bottom:18px}
-.bb-row{display:flex;gap:10px;margin-bottom:22px}
-.bb-btn{font-size:12px;font-weight:700;padding:9px 16px;border-radius:8px;background:var(--blue);color:#fff}
-.bb-btn.o{background:transparent;border:1px solid rgba(138,148,176,.4);color:var(--ice)}
-.bb-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.bb-stat{background:rgba(11,16,32,.55);border:1px solid var(--line);border-radius:10px;padding:12px 10px;text-align:center}
-.bb-stat b{display:block;font-size:16px;color:var(--sky)}
-.bb-stat span{font-size:10.5px;color:var(--muted);font-family:'JetBrains Mono',monospace}
-.live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#3ddc84;margin-right:7px;animation:pulse 1.8s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.cta h2{margin-bottom:14px}
+.cta p{color:var(--muted);max-width:540px;margin:0 auto 32px}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.whisper{margin-top:22px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
 
-/* ---------- VISION ---------- */
-.vision{background:var(--panel-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.vision-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.vision blockquote{
-  font-size:clamp(19px,2.4vw,24px);font-weight:600;line-height:1.5;
-  border-left:3px solid var(--blue);padding-left:26px;
-}
-.vision blockquote footer{font-size:14px;color:var(--sky);margin-top:18px;font-weight:700}
-.v-points{display:grid;gap:16px}
-.v-point{display:flex;gap:15px;align-items:flex-start}
-.v-ico{
-  flex:0 0 42px;height:42px;border-radius:11px;display:grid;place-items:center;
-  background:rgba(13,110,253,.12);border:1px solid var(--line);font-size:18px;
-}
-.v-point b{display:block;font-size:15.5px;margin-bottom:2px}
-.v-point p{font-size:13.5px;color:var(--muted)}
+/* FOOTER */
+footer{border-top:1px solid var(--line);background:var(--bg-2);padding:56px 0 34px}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:44px;margin-bottom:40px}
+.fgrid h4{font-size:13px;font-family:'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--sky);margin-bottom:16px;font-weight:500}
+.fgrid a,.fgrid p{display:block;font-size:14px;color:var(--muted);margin-bottom:10px;transition:color .2s}
+.fgrid a:hover{color:var(--ink)}
+.fbase{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;color:var(--muted)}
 
-/* ---------- SERVICES ---------- */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
-.card{
-  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-  padding:26px 24px;transition:transform .2s,border-color .2s;
-}
-.card:hover{transform:translateY(-4px);border-color:rgba(54,179,255,.4)}
-.card .ico{font-size:26px;margin-bottom:14px;display:block}
-.card h3{font-size:17px;margin-bottom:8px}
-.card p{font-size:13.8px;color:var(--muted)}
-
-/* ---------- PACKAGES ---------- */
-.pkg-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:44px}
-.pkg{
-  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-  padding:26px 20px;display:flex;flex-direction:column;gap:12px;
-  transition:transform .2s,border-color .2s;
-}
-.pkg:hover{transform:translateY(-4px)}
-.pkg.hot{border-color:var(--blue);background:linear-gradient(180deg,rgba(13,110,253,.12),var(--panel));position:relative}
-.pkg.hot::after{
-  content:"MOST POPULAR";position:absolute;top:-11px;left:50%;transform:translateX(-50%);
-  font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.14em;
-  background:var(--blue);color:#fff;padding:4px 12px;border-radius:999px;white-space:nowrap;
-}
-.pkg .tier{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.18em;color:var(--sky)}
-.pkg h3{font-size:18px}
-.pkg p{font-size:13px;color:var(--muted);flex:1}
-.pkg .from{font-size:12px;color:var(--muted)}
-.pkg .from b{display:block;font-size:15px;color:var(--ice);font-family:'JetBrains Mono',monospace;margin-top:2px}
-
-/* ---------- PORTFOLIO ---------- */
-.folio{background:var(--panel-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.flagship{
-  display:grid;grid-template-columns:1.1fr .9fr;gap:0;margin-top:44px;
-  background:var(--panel);border:1px solid rgba(54,179,255,.35);border-radius:var(--radius);overflow:hidden;
-}
-.flag-shot{
-  background:linear-gradient(150deg,#2a1a08,#3d2410 55%,#1a1208);
-  min-height:320px;position:relative;display:grid;place-items:center;padding:34px;
-}
-.flag-shot .mini{
-  background:rgba(255,255,255,.97);color:#1c1917;border-radius:12px;width:100%;max-width:360px;
-  box-shadow:0 24px 60px rgba(0,0,0,.45);overflow:hidden;font-size:12px;
-}
-.mini-head{background:#f06106;color:#fff;padding:13px 16px;font-weight:800;font-size:14px;letter-spacing:.02em}
-.mini-body{padding:16px}
-.mini-body h4{font-size:15px;margin-bottom:4px}
-.mini-body p{color:#78716c;font-size:11.5px;margin-bottom:12px}
-.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.mini-item{background:#faf7f2;border:1px solid #eee7dc;border-radius:8px;padding:10px 6px;text-align:center;font-size:10px;color:#57534e}
-.mini-item span{display:block;font-size:17px;margin-bottom:3px}
-.flag-info{padding:38px 36px;display:flex;flex-direction:column;justify-content:center}
-.tag-live{
-  display:inline-flex;align-items:center;font-family:'JetBrains Mono',monospace;
-  font-size:11px;letter-spacing:.16em;color:#3ddc84;margin-bottom:14px;
-}
-.flag-info h3{font-size:25px;margin-bottom:12px}
-.flag-info p{color:var(--muted);font-size:14.5px;margin-bottom:20px}
-.feat-list{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:26px}
-.feat{font-size:12.5px;color:var(--ice);display:flex;gap:8px;align-items:center}
-.feat::before{content:"✓";color:var(--sky);font-weight:800}
-.demo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
-.demo{
-  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-  padding:24px;transition:transform .2s;
-}
-.demo:hover{transform:translateY(-4px)}
-.demo .d-ico{font-size:24px;margin-bottom:12px;display:block}
-.demo h4{font-size:15.5px;margin-bottom:6px}
-.demo p{font-size:13px;color:var(--muted)}
-.demo .soon{
-  font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;
-  color:#f0a35e;display:block;margin-top:14px;
-}
-
-/* ---------- PROCESS ---------- */
-.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:48px;position:relative}
-.steps::before{
-  content:"";position:absolute;top:26px;left:8%;right:8%;height:2px;
-  background:linear-gradient(90deg,transparent,var(--blue) 15%,var(--sky) 85%,transparent);
-  opacity:.5;
-}
-.step{text-align:center;position:relative}
-.step .num{
-  width:52px;height:52px;border-radius:50%;margin:0 auto 16px;
-  display:grid;place-items:center;font-family:'JetBrains Mono',monospace;font-weight:700;
-  background:var(--panel);border:2px solid var(--blue);color:var(--sky);font-size:15px;
-  position:relative;z-index:1;
-}
-.step b{display:block;font-size:15px;margin-bottom:5px}
-.step p{font-size:12.5px;color:var(--muted)}
-
-/* ---------- PAYMENTS ---------- */
-.pay-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
-.pay{
-  font-weight:700;font-size:14px;background:var(--panel);
-  border:1px solid var(--line);border-radius:10px;padding:14px 22px;
-}
-.pay.mobile{color:var(--sky)}
-
-/* ---------- CITIES ---------- */
-.cities{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
-.city{
-  font-family:'JetBrains Mono',monospace;font-size:12.5px;
-  border:1px solid var(--line);border-radius:999px;padding:9px 18px;color:var(--ice);
-  background:rgba(54,179,255,.04);
-}
-.city::before{content:"📍 ";font-size:11px}
-
-/* ---------- CTA ---------- */
-.cta-box{
-  background:linear-gradient(120deg,rgba(13,110,253,.2),rgba(54,179,255,.08)),var(--panel);
-  border:1px solid rgba(54,179,255,.3);border-radius:20px;
-  padding:56px 48px;text-align:center;
-}
-.cta-box h2{margin-bottom:12px}
-.cta-box p{color:var(--muted);margin-bottom:30px;max-width:520px;margin-left:auto;margin-right:auto}
-
-/* ---------- FOOTER ---------- */
-footer{border-top:1px solid var(--line);padding:52px 0 36px;background:var(--panel-2)}
-.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
-.foot-grid h4{font-size:13.5px;margin-bottom:14px;color:var(--ice)}
-.foot-grid a,.foot-grid p{display:block;font-size:13.5px;color:var(--muted);margin-bottom:9px}
-.foot-grid a:hover{color:var(--sky)}
-.foot-base{
-  border-top:1px solid var(--line);padding-top:24px;
-  display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
-  font-size:12.5px;color:var(--muted);
-}
-
-/* ---------- REVEAL ---------- */
-.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+/* REVEAL */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.8,.3,1),transform .7s cubic-bezier(.2,.8,.3,1)}
 .rv.in{opacity:1;transform:none}
-@media (prefers-reduced-motion: reduce){
+@media (prefers-reduced-motion:reduce){
   .rv{opacity:1;transform:none;transition:none}
-  .live-dot{animation:none}
+  .strip-in,.pulse{animation:none}
   html{scroll-behavior:auto}
+  .screen{transform:none}
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* RESPONSIVE */
 @media(max-width:960px){
-  .hero-grid,.vision-grid,.flagship{grid-template-columns:1fr}
-  .cards,.demo-grid{grid-template-columns:1fr 1fr}
-  .pkg-grid{grid-template-columns:1fr 1fr}
-  .steps{grid-template-columns:repeat(2,1fr);gap:26px}
-  .steps::before{display:none}
+  .hero-grid,.case-wrap,.pay-wrap{grid-template-columns:1fr}
+  .build-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr;gap:26px}
   .nav-links{display:none}
-  .foot-grid{grid-template-columns:1fr 1fr}
-  .browser{transform:none}
+  .screen{transform:none}
+  .fgrid{grid-template-columns:1fr 1fr}
 }
-@media(max-width:580px){
-  .cards,.demo-grid,.pkg-grid,.foot-grid{grid-template-columns:1fr}
-  section{padding:64px 0}
-  .cta-box{padding:40px 24px}
-  .flag-info{padding:28px 22px}
+@media(max-width:600px){
+  .build-grid,.steps,.fgrid{grid-template-columns:1fr}
+  .hero-ctas .btn{width:100%}
+  .trust-row{gap:18px}
 }
 </style>
 </head>
@@ -302,13 +226,12 @@ footer{border-top:1px solid var(--line);padding:52px 0 36px;background:var(--pan
   <div class="wrap nav-in">
     <a class="logo" href="#top">WEB<span>ORA</span></a>
     <div class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#packages">Packages</a>
-      <a href="#work">Our Work</a>
-      <a href="#process">Process</a>
-      <a href="#contact">Contact</a>
+      <a href="#build">What we build</a>
+      <a href="#work">Our work</a>
+      <a href="#how">How it works</a>
+      <a href="#reach">Coverage</a>
     </div>
-    <a class="btn sm" href="#contact">Let's Grow Together →</a>
+    <a class="btn sm" href="#start">Start a project</a>
   </div>
 </nav>
 
@@ -317,254 +240,226 @@ footer{border-top:1px solid var(--line);padding:52px 0 36px;background:var(--pan
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow">Digital today. Grow tomorrow.</span>
-      <h1>We build websites that <span class="grad">grow your business</span></h1>
-      <p class="lead">WEBORA helps small businesses across Tanzania go online, reach more customers, take orders, receive payments — and grow successfully in this modern AI world.</p>
+      <h1>We build your<br>business <span class="grad">online.</span></h1>
+      <p class="sub">Websites, online stores, booking systems, tracking platforms and custom software — built for Tanzanian businesses. If your business needs it online, we can build it.</p>
       <div class="hero-ctas">
-        <a class="btn" href="#contact">Start your online business</a>
-        <a class="btn ghost" href="#work">View our work</a>
+        <a class="btn" href="#start">Start a project</a>
+        <a class="btn ghost" href="#work">See real work →</a>
       </div>
-      <div class="chips">
-        <span class="chip">Modern websites</span>
-        <span class="chip">Mobile friendly</span>
-        <span class="chip">Fast &amp; secure</span>
-        <span class="chip">AI powered</span>
-        <span class="chip">Support 24/7</span>
+      <div class="trust-row">
+        <div class="trust"><b>Live</b><span>projects running</span></div>
+        <div class="trust"><b>Mobile money</b><span>payments built in</span></div>
+        <div class="trust"><b>Tanzania</b><span>wide coverage</span></div>
       </div>
     </div>
-    <div class="browser rv">
-      <div class="browser-bar">
-        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-        <span class="urlbar">https://<b>shahisundries.com</b></span>
-      </div>
-      <div class="browser-body">
-        <span class="bb-tag"><span class="live-dot"></span>Live project — built by WEBORA</span>
-        <h3>Shahi Sundries</h3>
-        <p>Snacks, drinks &amp; confectionery — ordered online, delivered in Dar es Salaam.</p>
-        <div class="bb-row">
-          <span class="bb-btn">Order now</span>
-          <span class="bb-btn o">Browse products</span>
+
+    <div class="mock rv">
+      <div class="screen">
+        <div class="screen-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="addr">https://<b>shahisundries.com</b></span>
         </div>
-        <div class="bb-stats">
-          <div class="bb-stat"><b>Online</b><span>storefront</span></div>
-          <div class="bb-stat"><b>Mobile</b><span>ordering</span></div>
-          <div class="bb-stat"><b>Delivery</b><span>dar es salaam</span></div>
+        <div class="screen-body">
+          <span class="live"><span class="pulse"></span>Live · built by WEBORA</span>
+          <h3>Shahi Sundries</h3>
+          <p>Snacks, drinks &amp; confectionery — ordered online, delivered across Dar es Salaam.</p>
+          <div class="mini-row">
+            <div class="mini"><b>Store</b><span>online</span></div>
+            <div class="mini"><b>Orders</b><span>from phone</span></div>
+            <div class="mini"><b>Delivery</b><span>dar es salaam</span></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </header>
 
-<!-- VISION -->
-<section class="vision">
-  <div class="wrap vision-grid">
-    <blockquote class="rv">
-      "Every small business should be online and accessible to everyone. At this time of AI and digital transformation, we must grow and adapt. Everything is moving online — your business should be too."
-      <footer>— The WEBORA Team</footer>
-    </blockquote>
-    <div class="v-points">
-      <div class="v-point rv"><div class="v-ico">🌍</div><div><b>Get found</b><p>Be visible online and attract more customers, beyond your location.</p></div></div>
-      <div class="v-point rv"><div class="v-ico">🛒</div><div><b>Take orders</b><p>Let customers order from their phones — any time, day or night.</p></div></div>
-      <div class="v-point rv"><div class="v-ico">💳</div><div><b>Receive payments</b><p>Accept mobile money, cards, and cash on delivery.</p></div></div>
-      <div class="v-point rv"><div class="v-ico">📈</div><div><b>Grow successfully</b><p>Reach more people and grow your business with modern tools and AI.</p></div></div>
-    </div>
+<!-- STRIP -->
+<div class="strip">
+  <div class="strip-in">
+    <span>Business websites</span><i>◆</i>
+    <span>E-commerce stores</span><i>◆</i>
+    <span>Online ordering</span><i>◆</i>
+    <span>Mobile money payments</span><i>◆</i>
+    <span>Booking systems</span><i>◆</i>
+    <span>Tracking platforms</span><i>◆</i>
+    <span>Custom business software</span><i>◆</i>
+    <span>AI &amp; automation</span><i>◆</i>
+    <span>Business websites</span><i>◆</i>
+    <span>E-commerce stores</span><i>◆</i>
+    <span>Online ordering</span><i>◆</i>
+    <span>Mobile money payments</span><i>◆</i>
+    <span>Booking systems</span><i>◆</i>
+    <span>Tracking platforms</span><i>◆</i>
+    <span>Custom business software</span><i>◆</i>
+    <span>AI &amp; automation</span><i>◆</i>
   </div>
-</section>
+</div>
 
-<!-- SERVICES -->
-<section id="services">
+<!-- WHAT WE BUILD -->
+<section id="build">
   <div class="wrap">
     <span class="eyebrow">What we build</span>
-    <h2>Everything you need to <span class="grad">grow online</span></h2>
-    <p class="sub">We don't just build websites. We help you build your digital business — step by step, around your customers.</p>
-    <div class="cards">
-      <div class="card rv"><span class="ico">💻</span><h3>Business websites</h3><p>Professional, fast, mobile-friendly websites that build trust and make you easy to find.</p></div>
-      <div class="card rv"><span class="ico">🛍️</span><h3>Online stores</h3><p>Sell your products online with secure checkout and easy management.</p></div>
-      <div class="card rv"><span class="ico">📱</span><h3>Online ordering</h3><p>Let customers order products or services straight from their phones.</p></div>
-      <div class="card rv"><span class="ico">💳</span><h3>Payments &amp; mobile money</h3><p>Accept payments via Selcom, Tigo Pesa, Airtel Money, M-Pesa, cards and more.</p></div>
-      <div class="card rv"><span class="ico">📅</span><h3>Bookings &amp; appointments</h3><p>Online booking for restaurants, hotels, salons, and service providers.</p></div>
-      <div class="card rv"><span class="ico">🤖</span><h3>AI &amp; automation</h3><p>Practical AI tools for customer service, marketing, and operations — made simple.</p></div>
+    <h2>More than websites.<br><span class="grad">Whole systems.</span></h2>
+    <p class="lede">Some businesses need a website. Others need to sell online, take bookings, track stock or run their whole operation from one screen. We build both — and everything in between.</p>
+
+    <div class="build-grid">
+      <div class="bcard rv"><span class="bnum">01</span><h3>Business websites</h3><p>Fast, mobile-friendly websites that make your business easy to find, easy to trust and easy to contact.</p></div>
+      <div class="bcard rv"><span class="bnum">02</span><h3>E-commerce stores</h3><p>Sell your products online with a proper catalogue, secure checkout and orders you can actually manage.</p></div>
+      <div class="bcard rv"><span class="bnum">03</span><h3>Online ordering</h3><p>Let customers order from their phones — day or night — with delivery or cash on delivery built in.</p></div>
+      <div class="bcard rv"><span class="bnum">04</span><h3>Payments &amp; mobile money</h3><p>Accept Selcom, Tigo Pesa, Airtel Money, M-Pesa, cards and cash on delivery. Pay the way your customers pay.</p></div>
+      <div class="bcard rv"><span class="bnum">05</span><h3>Booking &amp; appointments</h3><p>Online booking for salons, hotels, clinics, consultants and service providers — no more WhatsApp back-and-forth.</p></div>
+      <div class="bcard rv"><span class="bnum">06</span><h3>Tracking &amp; management systems</h3><p>Stock, orders, deliveries, staff, expiry dates — custom systems that replace the notebook and the spreadsheet.</p></div>
+      <div class="bcard rv"><span class="bnum">07</span><h3>Custom business platforms</h3><p>When off-the-shelf software doesn't fit your business, we build software that does.</p></div>
+      <div class="bcard rv"><span class="bnum">08</span><h3>AI &amp; automation</h3><p>Practical AI that saves you time — customer replies, content, reporting and repetitive work handled automatically.</p></div>
+      <div class="bcard rv"><span class="bnum">09</span><h3>Support &amp; growth</h3><p>We don't disappear after launch. Updates, improvements and help whenever your business needs it.</p></div>
     </div>
   </div>
 </section>
 
-<!-- PACKAGES -->
-<section id="packages" style="padding-top:0">
-  <div class="wrap">
-    <span class="eyebrow">Simple, clear packages</span>
-    <h2>Pick your starting point</h2>
-    <p class="sub">Every business is different. Start where you are — grow when you're ready. All packages include mobile-friendly design and our support.</p>
-    <div class="pkg-grid">
-      <div class="pkg rv">
-        <span class="tier">WEBORA</span><h3>START</h3>
-        <p>A professional business website that builds trust and gets you found.</p>
-        <span class="from">Starting from<b>Ask for quote</b></span>
-      </div>
-      <div class="pkg hot rv">
-        <span class="tier">WEBORA</span><h3>SELL</h3>
-        <p>Website + online store + ordering. Start selling online.</p>
-        <span class="from">Starting from<b>Ask for quote</b></span>
-      </div>
-      <div class="pkg rv">
-        <span class="tier">WEBORA</span><h3>GROW</h3>
-        <p>Website + e-commerce + payments + marketing. The full growth setup.</p>
-        <span class="from">Starting from<b>Ask for quote</b></span>
-      </div>
-      <div class="pkg rv">
-        <span class="tier">WEBORA</span><h3>BUSINESS</h3>
-        <p>Custom systems + automation + AI for serious operations.</p>
-        <span class="from">Starting from<b>Ask for quote</b></span>
-      </div>
-      <div class="pkg rv">
-        <span class="tier">WEBORA</span><h3>APP</h3>
-        <p>Mobile application development for your business.</p>
-        <span class="from">Starting from<b>Ask for quote</b></span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
-<section class="folio" id="work">
+<!-- CASE STUDY -->
+<section class="case" id="work">
   <div class="wrap">
     <span class="eyebrow">Our work</span>
-    <h2>Real businesses. <span class="grad">Real results.</span></h2>
-    <p class="sub">From traditional shop to online store — this is what going digital looks like.</p>
+    <h2>From a shop counter<br>to <span class="grad">online orders.</span></h2>
+    <p class="lede">A real Dar es Salaam retail business, now selling online. This is what going digital actually looks like.</p>
 
-    <div class="flagship rv">
-      <div class="flag-shot">
-        <div class="mini">
-          <div class="mini-head">SHAHI SUNDRIES</div>
-          <div class="mini-body">
+    <div class="case-wrap rv">
+      <div class="case-visual">
+        <div class="shop">
+          <div class="shop-top"><b>SHAHI SUNDRIES</b><span>Dar es Salaam</span></div>
+          <div class="shop-body">
             <h4>Snacks &amp; drinks, delivered.</h4>
-            <p>Order your favourites online — delivered across Dar es Salaam.</p>
-            <div class="mini-grid">
-              <div class="mini-item"><span>🍿</span>Snacks</div>
-              <div class="mini-item"><span>🥤</span>Drinks</div>
-              <div class="mini-item"><span>🍬</span>Sweets</div>
+            <p>Order your favourites online — delivered to your door.</p>
+            <div class="prods">
+              <div class="prod"><i></i>Snacks</div>
+              <div class="prod"><i></i>Drinks</div>
+              <div class="prod"><i></i>Sweets</div>
             </div>
+            <div class="shop-cta">Order now</div>
           </div>
         </div>
       </div>
-      <div class="flag-info">
-        <span class="tag-live"><span class="live-dot"></span>LIVE — SHAHISUNDRIES.COM</span>
-        <h3>Shahi Sundries — from retail shop to online commerce</h3>
-        <p>A Dar es Salaam retail business, now taking orders online. WEBORA designed and built the complete platform:</p>
-        <div class="feat-list">
-          <span class="feat">Online storefront</span>
-          <span class="feat">Product catalogue</span>
-          <span class="feat">Mobile-friendly ordering</span>
-          <span class="feat">Delivery in Dar es Salaam</span>
+      <div class="case-info">
+        <span class="live"><span class="pulse"></span>Live at shahisundries.com</span>
+        <h3>Shahi Sundries</h3>
+        <p>A retail business that sold over the counter now takes orders online and delivers across Dar es Salaam. WEBORA designed and built the complete platform, end to end.</p>
+        <div class="did">
+          <div>Online storefront with full product catalogue</div>
+          <div>Mobile-first ordering — most customers arrive on a phone</div>
+          <div>Order management the owner can actually run</div>
+          <div>Delivery across Dar es Salaam</div>
         </div>
-        <a class="btn sm" href="https://shahisundries.com" target="_blank" rel="noopener">Visit the live site →</a>
+        <a class="btn" href="https://shahisundries.com" target="_blank" rel="noopener">Visit the live site →</a>
       </div>
     </div>
-
-    <div class="demo-grid">
-      <div class="demo rv"><span class="d-ico">🍽️</span><h4>Restaurant websites</h4><p>Menus, table booking, and online ordering that bring customers in.</p><span class="soon">SHOWCASE COMING SOON</span></div>
-      <div class="demo rv"><span class="d-ico">💇</span><h4>Salon &amp; beauty</h4><p>Appointment booking and service showcases that fill your calendar.</p><span class="soon">SHOWCASE COMING SOON</span></div>
-      <div class="demo rv"><span class="d-ico">🏠</span><h4>Real estate</h4><p>Property listings that attract serious buyers and renters.</p><span class="soon">SHOWCASE COMING SOON</span></div>
-    </div>
   </div>
 </section>
 
-<!-- PROCESS -->
-<section id="process">
+<!-- HOW IT WORKS -->
+<section id="how">
   <div class="wrap">
-    <span class="eyebrow">How we work</span>
-    <h2>From idea to online in <span class="grad">5 steps</span></h2>
+    <span class="eyebrow">How it works</span>
+    <h2>Simple from start<br>to <span class="grad">launch.</span></h2>
+    <p class="lede">You tell us what your business needs. We handle the technology and keep you updated in plain language — no jargon, no surprises.</p>
+
     <div class="steps">
-      <div class="step rv"><div class="num">01</div><b>Discover</b><p>We understand your business and goals.</p></div>
-      <div class="step rv"><div class="num">02</div><b>Plan &amp; design</b><p>We design the perfect solution for you.</p></div>
-      <div class="step rv"><div class="num">03</div><b>Build</b><p>We build your website using modern technology and AI.</p></div>
-      <div class="step rv"><div class="num">04</div><b>Launch</b><p>We launch your business online and make it live.</p></div>
-      <div class="step rv"><div class="num">05</div><b>Grow</b><p>We support you to grow and achieve success.</p></div>
+      <div class="step rv"><span class="n">01</span><h4>Understand</h4><p>We learn your business, your customers and what you actually need — before writing a single line of code.</p></div>
+      <div class="step rv"><span class="n">02</span><h4>Plan &amp; design</h4><p>We agree the scope, the look and the price. You know exactly what you're getting.</p></div>
+      <div class="step rv"><span class="n">03</span><h4>Build &amp; launch</h4><p>We build it with modern technology, test it properly, and put your business online.</p></div>
+      <div class="step rv"><span class="n">04</span><h4>Support &amp; grow</h4><p>We stay available for changes, improvements and whatever comes next as your business grows.</p></div>
     </div>
   </div>
 </section>
 
-<!-- PAYMENTS + CITIES -->
-<section style="padding-top:0">
-  <div class="wrap">
-    <span class="eyebrow">Accept payments your way</span>
-    <h2>More payment options. More sales.</h2>
-    <p class="sub">Give your customers the flexibility to pay how they want — more trust, more sales, more growth.</p>
-    <div class="pay-row rv">
-      <span class="pay mobile">Selcom</span>
-      <span class="pay mobile">Tigo Pesa</span>
-      <span class="pay mobile">Airtel Money</span>
-      <span class="pay mobile">M-Pesa</span>
-      <span class="pay">Visa / Mastercard</span>
-      <span class="pay">Cash on Delivery</span>
+<!-- PAYMENTS + REACH -->
+<section id="reach" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap pay-wrap">
+    <div>
+      <span class="eyebrow">Built for how Tanzania pays</span>
+      <h2>Every payment<br>your customers use.</h2>
+      <p class="lede">Mobile money, cards, or cash when the order arrives. More ways to pay means fewer abandoned orders and more sales.</p>
+      <div class="chips">
+        <span class="chip a">Selcom</span>
+        <span class="chip a">Tigo Pesa</span>
+        <span class="chip a">Airtel Money</span>
+        <span class="chip a">M-Pesa</span>
+        <span class="chip">Visa</span>
+        <span class="chip">Mastercard</span>
+        <span class="chip">Cash on delivery</span>
+      </div>
     </div>
-
-    <div style="margin-top:70px">
-      <span class="eyebrow">One national brand</span>
-      <h2>Serving businesses <span class="grad">across Tanzania</span></h2>
-      <div class="cities rv">
-        <span class="city">Dar es Salaam</span>
-        <span class="city">Arusha</span>
-        <span class="city">Mwanza</span>
-        <span class="city">Zanzibar</span>
-        <span class="city">Dodoma</span>
-        <span class="city">Mbeya</span>
-        <span class="city">Morogoro</span>
-        <span class="city">Tanga</span>
-        <span class="city">&amp; beyond</span>
+    <div>
+      <span class="eyebrow">Where we work</span>
+      <h2>All of Tanzania.</h2>
+      <p class="lede">We work online, so your location is never the limit. From the coast to the lake to the highlands.</p>
+      <div class="chips">
+        <span class="chip">Dar es Salaam</span>
+        <span class="chip">Arusha</span>
+        <span class="chip">Mwanza</span>
+        <span class="chip">Zanzibar</span>
+        <span class="chip">Dodoma</span>
+        <span class="chip">Mbeya</span>
+        <span class="chip">Morogoro</span>
+        <span class="chip">Tanga</span>
+        <span class="chip">&amp; beyond</span>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section id="contact" style="padding-top:10px">
+<section id="start">
   <div class="wrap">
-    <div class="cta-box rv">
-      <span class="eyebrow">Ready to grow?</span>
-      <h2>Let's build something <span class="grad">amazing together</span></h2>
-      <p>Tell us about your business and we'll show you how to take it online — simply, affordably, and successfully.</p>
-      <a class="btn" href="https://wa.me/255716923578?text=WEBSITE%20—%20Hi%20WEBORA%2C%20I%20want%20to%20take%20my%20business%20online.%0A%0AMy%20business%3A%20%0AMy%20city%3A%20" target="_blank" rel="noopener">💬 WhatsApp "WEBSITE" to get started</a>
-      <p style="margin-top:18px;margin-bottom:0;font-size:13px">Or email <a href="mailto:webora.studiotz@gmail.com" style="color:var(--sky)">webora.studiotz@gmail.com</a></p>
+    <div class="cta rv">
+      <span class="eyebrow">Start a project</span>
+      <h2>Tell us what you need<br><span class="grad">online.</span></h2>
+      <p>Send us one message describing your business and what you'd like to build. We'll tell you honestly what's possible, how long it takes and what it costs.</p>
+      <div class="cta-btns">
+        <a class="btn" href="https://wa.me/255716923578?text=Hi%20WEBORA%2C%20I%20want%20to%20take%20my%20business%20online.%0A%0AMy%20business%3A%20%0AMy%20city%3A%20%0AWhat%20I%20need%3A%20" target="_blank" rel="noopener">WhatsApp us</a>
+        <a class="btn ghost" href="mailto:webora.studiotz@gmail.com?subject=New%20project%20enquiry">Send an email</a>
+      </div>
+      <p class="whisper">Free consultation · No obligation · Reply within 24 hours</p>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="foot-grid">
+    <div class="fgrid">
       <div>
-        <a class="logo" href="#top" style="display:inline-block;margin-bottom:14px">WEB<span>ORA</span></a>
-        <p>We help small businesses go online, serve more customers, and grow successfully in this digital world.</p>
-        <p class="mono" style="font-size:12px;color:var(--sky)">Your Business. Online. Everywhere.</p>
+        <a class="logo" href="#top" style="display:inline-block;margin-bottom:16px">WEB<span>ORA</span></a>
+        <p style="max-width:330px">We build websites, online stores and business platforms that help Tanzanian businesses reach more customers and run better.</p>
+        <p class="mono" style="color:var(--sky);font-size:12px;letter-spacing:.1em">YOUR BUSINESS. ONLINE. EVERYWHERE.</p>
       </div>
       <div>
-        <h4>Services</h4>
-        <a href="#services">Business websites</a>
-        <a href="#services">E-commerce stores</a>
-        <a href="#services">Online ordering</a>
-        <a href="#services">Payments &amp; mobile money</a>
-        <a href="#services">AI solutions</a>
+        <h4>What we build</h4>
+        <a href="#build">Business websites</a>
+        <a href="#build">E-commerce stores</a>
+        <a href="#build">Booking systems</a>
+        <a href="#build">Tracking platforms</a>
+        <a href="#build">Custom software</a>
       </div>
       <div>
-        <h4>Contact</h4>
-        <a href="https://wa.me/255716923578" target="_blank" rel="noopener">WhatsApp: +255 716 923 578</a>
+        <h4>Get in touch</h4>
+        <a href="https://wa.me/255716923578" target="_blank" rel="noopener">WhatsApp</a>
         <a href="mailto:webora.studiotz@gmail.com">webora.studiotz@gmail.com</a>
+        <a href="https://instagram.com/webora.tz" target="_blank" rel="noopener">@webora.tz</a>
         <p>Dar es Salaam, Tanzania</p>
-        <p>Available 24/7 · Worldwide</p>
       </div>
     </div>
-    <div class="foot-base">
+    <div class="fbase">
       <span>© 2026 WEBORA. All rights reserved.</span>
-      <span>We Build Websites That Grow Businesses.</span>
+      <span>webora.co.tz</span>
     </div>
   </div>
 </footer>
 
 <script>
-// scroll reveal (respects reduced motion via CSS)
-const io = new IntersectionObserver(es => {
-  es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-}, {threshold:.12});
-document.querySelectorAll('.rv').forEach(el => io.observe(el));
+const io=new IntersectionObserver(function(es){
+  es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
 </script>
 </body>
 </html>
